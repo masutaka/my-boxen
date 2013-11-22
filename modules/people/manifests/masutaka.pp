@@ -34,6 +34,18 @@ class people::masutaka {
     ruby => '2.0.0',
   }
 
-  perl::version { '5.18.1': }
+  $perl_version = '5.18.1'
+
+  perl::version { $perl_version: }
+
+  perl::cpanm { "HTML::Template for ${perl_version}":
+    module => 'HTML::Template',
+    perl   => $perl_version
+  }
+
+  perl::cpanm { "App::highlight for ${perl_version}":
+    module => 'App::highlight',
+    perl   => $perl_version
+  }
 
 }
