@@ -24,4 +24,14 @@ class people::masutaka {
      ]:
   }
 
+  ruby::gem { 'ghn':
+    gem  => 'ghn',
+    ruby => '2.0.0',
+  }
+
+  ruby::gem { 'puppet-lint':
+    gem  => 'puppet-lint',
+    ruby => '2.0.0',
+  }
+
 }
