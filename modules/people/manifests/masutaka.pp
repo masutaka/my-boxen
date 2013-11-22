@@ -34,4 +34,6 @@ class people::masutaka {
     ruby => '2.0.0',
   }
 
+  perl::version { '5.18.1': }
+
 }
