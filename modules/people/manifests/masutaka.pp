@@ -24,14 +24,16 @@ class people::masutaka {
      ]:
   }
 
-  ruby::gem { 'ghn':
+  $ruby_version = '2.0.0'
+
+  ruby::gem { "ghn for ${ruby_version}":
     gem  => 'ghn',
-    ruby => '2.0.0',
+    ruby => $ruby_version,
   }
 
-  ruby::gem { 'puppet-lint':
+  ruby::gem { "puppet-lint for ${ruby_version}":
     gem  => 'puppet-lint',
-    ruby => '2.0.0',
+    ruby => $ruby_version,
   }
 
   $perl_version = '5.18.1'
