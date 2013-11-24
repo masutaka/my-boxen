@@ -56,6 +56,7 @@ class people::masutaka {
     perl   => $perl_version
   }
 
+  include appcleaner
   include chrome
   include dropbox
   include firefox

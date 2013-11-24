@@ -57,6 +57,7 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 
 # ---auto update---
+github "appcleaner",     "2.0.0", :repo => "boxelly/puppet-appcleaner"
 github "chrome",         "1.1.2"
 github "dropbox",        "1.1.2"
 github "firefox",        "1.1.5"

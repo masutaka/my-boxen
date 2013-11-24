@@ -1,4 +1,9 @@
 GITHUBTARBALL
+  remote: boxelly/puppet-appcleaner
+  specs:
+    appcleaner (2.0.0)
+
+GITHUBTARBALL
   remote: boxelly/puppet-limechat
   specs:
     limechat (1.0.0)
@@ -174,6 +179,7 @@ GITHUBTARBALL
     stdlib (4.1.0)
 
 DEPENDENCIES
+  appcleaner (= 2.0.0)
   boxen (= 3.3.4)
   chrome (= 1.1.2)
   dnsmasq (= 1.0.0)
