@@ -129,6 +129,11 @@ GITHUBTARBALL
     skitch (1.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-skype
+  specs:
+    skype (1.0.7)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -176,6 +181,7 @@ DEPENDENCIES
   ruby (= 6.7.2)
   sequel_pro (= 1.0.1)
   skitch (= 1.0.2)
+  skype (= 1.0.7)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   xquartz (= 1.1.0)

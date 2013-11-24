@@ -69,4 +69,5 @@ github "openoffice", "1.2.0"
 github "opera", "0.3.0"
 github "sequel_pro", "1.0.1"
 github "skitch", "1.0.2"
+github "skype", "1.0.7"
 # ---/auto update---

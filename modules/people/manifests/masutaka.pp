@@ -66,5 +66,6 @@ class people::masutaka {
   include opera
   include sequel_pro
   include skitch
+  include skype
 
 }
