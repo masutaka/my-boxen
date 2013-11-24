@@ -61,6 +61,7 @@ class people::masutaka {
   include firefox
   include handbrake
   include heroku
+  include libreoffice
   include opera
 
 }
