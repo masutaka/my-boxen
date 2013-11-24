@@ -68,6 +68,7 @@ class people::masutaka {
   include skitch
   include skype
   include sublime_text_2
+  include vagrant
   include virtualbox
 
 }
