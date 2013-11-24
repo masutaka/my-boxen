@@ -57,3 +57,7 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 
 github "perl", "1.1.0", :repo => "boxelly/puppet-perl"
+
+# ---auto update---
+github "opera", "0.3.0"
+# ---/auto update---
