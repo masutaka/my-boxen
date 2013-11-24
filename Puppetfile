@@ -56,20 +56,19 @@ github "xquartz",    "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-github "perl", "1.1.0", :repo => "boxelly/puppet-perl"
-
 # ---auto update---
-github "chrome", "1.1.2"
-github "dropbox", "1.1.2"
-github "firefox", "1.1.5"
-github "handbrake", "1.0.1"
-github "heroku", "2.1.1"
-github "libreoffice", "4.1.3"
-github "openoffice", "1.2.0"
-github "opera", "0.3.0"
-github "sequel_pro", "1.0.1"
-github "skitch", "1.0.2"
-github "skype", "1.0.7"
+github "chrome",         "1.1.2"
+github "dropbox",        "1.1.2"
+github "firefox",        "1.1.5"
+github "handbrake",      "1.0.1"
+github "heroku",         "2.1.1"
+github "libreoffice",    "4.1.3"
+github "openoffice",     "1.2.0"
+github "opera",          "0.3.0"
+github "perl",           "1.1.0", :repo => "boxelly/puppet-perl"
+github "sequel_pro",     "1.0.1"
+github "skitch",         "1.0.2"
+github "skype",          "1.0.7"
 github "sublime_text_2", "1.1.2"
-github "virtualbox", "1.0.9"
+github "virtualbox",     "1.0.9"
 # ---/auto update---
