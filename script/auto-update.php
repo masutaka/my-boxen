@@ -15,7 +15,12 @@ function fetch_new_version($resource) {
     $res = file_get_contents($url);
     $json = json_decode($res);
 
-    return $json[0]->name;
+    if(preg_match("/^\d/", $json[0]->name) >= 1) {
+      return $json[0]->name;
+    }
+    else {
+      return null;
+    }
 }
 
 function update_version($line) {
