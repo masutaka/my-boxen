@@ -62,6 +62,7 @@ class people::masutaka {
   include handbrake
   include heroku
   include libreoffice
+  include limechat
   include openoffice
   include opera
   include sequel_pro
