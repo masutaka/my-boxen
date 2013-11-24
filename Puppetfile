@@ -63,5 +63,6 @@ github "chrome", "1.1.2"
 github "dropbox", "1.1.2"
 github "firefox", "1.1.5"
 github "handbrake", "1.0.1"
+github "heroku", "2.1.1"
 github "opera", "0.3.0"
 # ---/auto update---
