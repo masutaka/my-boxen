@@ -68,4 +68,5 @@ github "libreoffice", "4.1.3"
 github "openoffice", "1.2.0"
 github "opera", "0.3.0"
 github "sequel_pro", "1.0.1"
+github "skitch", "1.0.2"
 # ---/auto update---
