@@ -71,4 +71,5 @@ github "sequel_pro", "1.0.1"
 github "skitch", "1.0.2"
 github "skype", "1.0.7"
 github "sublime_text_2", "1.1.2"
+github "virtualbox", "1.0.9"
 # ---/auto update---
