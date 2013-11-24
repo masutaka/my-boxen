@@ -56,6 +56,7 @@ class people::masutaka {
     perl   => $perl_version
   }
 
+  include chrome
   include opera
 
 }
