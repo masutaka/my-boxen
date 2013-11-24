@@ -64,5 +64,6 @@ class people::masutaka {
   include libreoffice
   include openoffice
   include opera
+  include sequel_pro
 
 }
