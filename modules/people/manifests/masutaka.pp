@@ -67,5 +67,6 @@ class people::masutaka {
   include sequel_pro
   include skitch
   include skype
+  include sublime_text_2
 
 }

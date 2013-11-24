@@ -134,6 +134,11 @@ GITHUBTARBALL
     skype (1.0.7)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sublime_text_2
+  specs:
+    sublime_text_2 (1.1.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -183,6 +188,7 @@ DEPENDENCIES
   skitch (= 1.0.2)
   skype (= 1.0.7)
   stdlib (= 4.1.0)
+  sublime_text_2 (= 1.1.2)
   sudo (= 1.0.0)
   xquartz (= 1.1.0)
 
