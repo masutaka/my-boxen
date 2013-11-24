@@ -60,5 +60,6 @@ github "perl", "1.1.0", :repo => "boxelly/puppet-perl"
 
 # ---auto update---
 github "chrome", "1.1.2"
+github "dropbox", "1.1.2"
 github "opera", "0.3.0"
 # ---/auto update---
