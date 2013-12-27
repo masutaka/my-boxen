@@ -15,6 +15,7 @@ class people::masutaka {
      'lv',
      'markdown',
      'mercurial',
+     'qt',         # ipexc
      'stunnel',    # mew
      'unrar',
      'w3m',
