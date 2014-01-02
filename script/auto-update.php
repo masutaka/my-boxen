@@ -9,10 +9,14 @@ function notify_update($name, $from, $to) {
     echo "updated '".$name."' from ".$from." to ".$to."\n";
 }
 
-function fetch_new_version($resource) {
-    $url = "https://api.github.com/repos/boxen/puppet-".$resource."/tags";
+function fetch_new_version($repo) {
+    $url = "https://api.github.com/repos/".$repo."/tags";
 
-    $res = file_get_contents($url);
+    $context = stream_context_create(array('http' => array(
+      'method' => 'GET',
+      'header' => 'User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)',
+    )));
+    $res = file_get_contents($url, false, $context);
     $json = json_decode($res);
 
     if(preg_match("/^\d/", $json[0]->name) >= 1) {
@@ -30,12 +34,18 @@ function update_version($line) {
     }
 
     // 現在Puppetfileに書かれているResourcesとバージョンを取得
-    preg_match("/^github \"(\w+)\",\s*\"(\d+\.\d+\.\d+)\"/", $line, $match);
+    preg_match("/^github \"(\w+)\",\s*\"(\d+\.\d+\.\d+)\"(, :repo =>.+)?/", $line, $match);
     $name = $match[1];
     $version = $match[2];
+    $option = $match[3];
+    $repo = "boxen/puppet-".$name;
+    if($option) {
+      preg_match("/^, :repo => \"(.+)\"/", $option, $match);
+      $repo = $match[1];
+    }
 
     // Github APIを利用して最新バージョンを取得
-    $new_version = fetch_new_version($name);
+    $new_version = fetch_new_version($repo);
 
     // 500等でバージョンの取得に失敗した場合更新をかけない
     if ( $new_version == null ) return $line;
