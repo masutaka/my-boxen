@@ -12,6 +12,7 @@ class people::masutaka {
      'imagemagick',
      'jq',         # json pretty-print
      'jsl',
+     'kindlegen',
      'lv',
      'markdown',
      'mercurial',
